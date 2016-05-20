@@ -1,0 +1,29 @@
+{% extends "template.html"  %}
+
+{% block content%}
+<div class="jumbotron">
+      <div class="container">
+        <h1>Personal Teacher</h1>
+        <p>Nova Maneira de marcar suas aulas particulares, com professores qualificados e mais proximo de você.</p>
+        <p><a class="btn btn-primary btn-lg" href="{% url 'detalhes' %}" role="button">Saiba Mais &raquo;</a></p>
+      </div>
+</div>
+<div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Publique sua Necessidade!</h2>
+          <p>Publique sua necessidade e em instantes um professor cadastrado entrará em contato com você para o agendamento da aula. </p>
+          <p><a class="btn btn-default" href="{% url 'detalhes' %}" role="button">Ver Detalhes &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Qualifique as Aulas</h2>
+          <p>a cada aula você poderá qualificar os professores criando um ranking de melhores professores, colaborando assim para professores mais qualificados.</p>
+          <p><a class="btn btn-default" href="{% url 'detalhes' %}" role="button">Ver Detalhes &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Ensine</h2>
+          <p>Ganhe dinheiro com a plataforma se tornando um professor cadastrado.</p>
+          <p><a class="btn btn-default" href="{% url 'cadastro' %}" role="button">Ver Detalhes &raquo;</a></p>
+        </div>
+      </div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "template.html" %}
+{% block content%}
+<div class="page-header">
+</div>
+    <div class="container">
+       <h2>Cadastre-se</h2>
+       <form role="form" class="form-horizontal">
+       		<div class="form-group">
+			    <label class="control-label col-sm-2">Nome Completo</label>
+			    <div  class="col-sm-6">
+			    	<input type="text" class="form-control" id="nome" placeholder="Nome Completo">
+				</div>
+			</div>
+       		<div class="form-group">
+			    <label class="control-label col-sm-2">Email</label>
+			    <div  class="col-sm-6">
+			    	<input type="email" class="form-control" id="email" placeholder="Email">
+				</div>
+			</div>
+			<div class="form-group">
+			    <label class="control-label col-sm-2">Confirme Email</label>
+			    <div  class="col-sm-6">
+			    	<input type="email" class="form-control" id="confirm-email" placeholder="Conforme seu Email">
+				</div>
+			</div>   
+			<div class="form-group">
+			    <label class="control-label col-sm-2">Password</label>
+			    <div  class="col-sm-6">
+			    	<input type="password" class="form-control" id="pw" placeholder="Senha">
+				</div>
+			</div>
+			<div class="form-group">
+			    <label class="control-label col-sm-2">Confirm Password</label>
+			    <div  class="col-sm-6">
+			    	<input type="password" class="form-control" id="repw" placeholder="Confirmar Senha">
+				</div>
+			</div>
+			<div class="form-group">
+			    <label class="control-label col-sm-2">Endereço</label>
+			    <div  class="col-sm-3">
+			    	<input type="text" class="form-control" id="edereco" placeholder="Endereço">
+				</div>
+				<label class="control-label col-sm-1">Numero</label>
+				<div  class="col-sm-2">
+			    	<input type="text" class="form-control" id="numero" placeholder="Numero">
+			    </div>
+			</div> 					
+			<div class="from-group">
+				<label class="radio-inline control-label col-sm-2">
+			      <input type="radio" name="optradio">Sou Aluno
+			    </label>
+			    <label class="radio-inline control-label col-sm-2">
+			      <input type="radio" name="optradio">Sou Professor
+			    </label>
+			</div>
+			<br/>
+			<br/>
+			<div class="form-group">
+			     <div class="col-sm-offset-2 col-sm-10">
+			         <button type="submit" class="btn btn-default">Salvar</button>
+			     </div>
+			</div>  	
+       </form>
+{%endblock%}

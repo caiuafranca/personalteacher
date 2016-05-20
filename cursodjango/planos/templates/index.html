@@ -1,0 +1,21 @@
+{% extends "template.html"  %}
+
+{% block content%}
+<div class="page-header">
+</div>
+<div class="container">
+  <h1>Nossos Planos</h1>
+  <!-- Example row of columns -->
+      <div class="row">
+        {% for plano in planos %}
+        <div class="col-lg-4">
+          <h2>{{ plano.name }}</h2>
+          <h4>Descrição do Plano:</h4>
+          <p class="text-danger">{{ plano.description }}</p>
+          <h4>Preço:</h4>
+          <p class="text-danger">{{ plano.price }}</p>
+          <p><a class="btn btn-primary" href="#" role="button">Comprar</a></p>
+        </div>
+        {% endfor %}
+      </div>
+ {% endblock %}
